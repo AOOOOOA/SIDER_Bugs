@@ -7,7 +7,6 @@ title: Experiment Results
 
 Below is a summary table of our main experiment findings.
 
-<!-- 你可以自定义表格内容，下面是示例 -->
 <table>
     <thead>
         <tr>
@@ -44,7 +43,7 @@ Below is a summary table of our main experiment findings.
 ## Introduction
 
 3D driving simulators are essential tools for autonomous driving research. However, their reliability is often overlooked.  
-Our project systematically evaluates simulator reliability and exposes several critical bugs...
+Our project systematically evaluates simulator reliability and exposes several critical bugs.
 
 ## Key Findings
 
@@ -55,10 +54,9 @@ Our project systematically evaluates simulator reliability and exposes several c
 
 ## Detailed Results
 
-You can add more details, images, code snippets, or even experiment logs here.
-
+TBS
 ---
 
 ## Contact
 
-Feel free to contact us at [your-email@example.com] for more information.
+Feel free to contact us on github repo for more information.
