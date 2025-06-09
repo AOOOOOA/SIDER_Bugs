@@ -54,7 +54,26 @@ Our project systematically evaluates simulator reliability and exposes several c
 
 ## Detailed Results
 
-TBS
+<div style="display: flex; justify-content: space-around; align-items: flex-start; gap: 20px; margin: 20px 0;">
+    <div style="flex: 1; text-align: center;">
+        <h4>Simulator Video</h4>
+        <video width="100%" height="auto" controls style="max-width: 400px;">
+            <source src="assets/sandbox_simulator.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p><em>Scenario in simulator</em></p>
+    </div>
+    <div style="flex: 1; text-align: center;">
+        <h4>Reality Video</h4>
+        <video width="100%" height="auto" controls style="max-width: 400px;">
+            <source src="assets/sandbox_reality.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p><em>Corresponding real-world scenario</em></p>
+    </div>
+</div>
+
+
 ---
 
 ## Contact
