@@ -62,7 +62,6 @@ Below is a summary table of our main experiment findings.
 To verify whether the bugs found in simulation also occur in real-world settings, we set up a sand table that exactly replicates the simulated map. Both the virtual and real vehicles are controlled by the Apollo system, using the same commands generated in the simulation. 
 As shown in the video, the virtual vehicle in CARLA deviates significantly from its planned path. However, the real vehicle on the sand table, following the same commands, stays on the planned path without any deviation. This demonstrates that the bug observed in simulation does not actually occur in the real world, and is a false positive caused by the simulator. Such differences highlight the importance of double-checking simulation results with real-world experiments.
 
-
 <div style="display: flex; justify-content: space-around; align-items: flex-start; gap: 20px; margin: 20px 0;">
     <div style="flex: 1; text-align: center;">
         <h4>Simulator Video</h4>
@@ -82,26 +81,88 @@ As shown in the video, the virtual vehicle in CARLA deviates significantly from 
     </div>
 </div>
 
+### Critical Misbehavior due to Simulator Bugs
 
-
-### Carla
-
-
-<div style="display: flex; justify-content: space-around; align-items: flex-start; gap: 20px; margin: 20px 0;">
-    <div style="flex: 1; text-align: center;">
-        <h4>Simulator Video</h4>
-        <video width="100%" height="auto" controls style="max-width: 400px;">
-            <source src="assets/carla_collision.mp4" type="video/mp4">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 30px 0;">
+    <!-- Row 1: CARLA Bugs -->
+    <div style="text-align: center;">
+        <h4>Collision (CARLA) (a)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/carla/carla_collision.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p><em>Scenario in simulator</em></p>
+    </div>
+    
+    <div style="text-align: center;">
+        <h4>Off-Road (CARLA) (b)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/carla/run_off_road.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div style="text-align: center;">
+        <h4>Stuck (CARLA) (c)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/carla/stuck.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Row 2: More CARLA & MetaDrive -->
+    <div style="text-align: center;">
+        <h4>Trajectory Deviation (CARLA) (d)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/carla/trajectory_deviation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div style="text-align: center;">
+        <h4>Unexpected Stop & Resume (CARLA) (e)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/carla/unexpected_stop_n_resume.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div style="text-align: center;">
+        <h4>Collision & Off-Road (MetaDrive) (f)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/MetaDrive/metadrive.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Row 3: CARLA-Apollo Bugs -->
+    <div style="text-align: center;">
+        <h4>Stuck (CARLA-Apollo) (g)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/Carla_Apollo/apollo_stuck.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div style="text-align: center;">
+        <h4>Trajectory Deviation (CARLA-Apollo) (h)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/Carla_Apollo/apollo_deviation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div style="text-align: center;">
+        <h4>Unexpected Stop & Resume (CARLA-Apollo) (i)</h4>
+        <video width="100%" height="auto" controls style="max-width: 300px;">
+            <source src="assets/Carla_Apollo/apollo_stop_n_start.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </div>
-### Metadrive
 
-### Carla-Apollo
-
-
+<p style="text-align: center; font-weight: bold; margin-top: 20px;">
+Fig. 6: Critical Misbehavior due to Simulator Bugs.
+</p>
 
 ---
 
