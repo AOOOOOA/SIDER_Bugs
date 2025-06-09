@@ -93,7 +93,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/carla/carla_collision.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Vehicle Collision:</strong> One of the most serious bugs identified, where the autonomous vehicle collides with other objects or vehicles, directly resulting in driving task failure and compromising safety evaluation.
         </p>
     </div>
@@ -104,7 +104,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/carla/run_off_road.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Off-road Events:</strong> Critical failure where the vehicle deviates from the designated roadway, representing a serious driving task failure that would be catastrophic in real-world scenarios.
         </p>
     </div>
@@ -115,7 +115,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/carla/stuck.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Agent Stuck:</strong> The autonomous agent becomes immobilized and unable to proceed, directly resulting in driving task failure and indicating fundamental issues in path planning or control systems.
         </p>
     </div>
@@ -127,7 +127,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/carla/trajectory_deviation.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Significant Trajectory Deviations:</strong> One of the most serious bugs where the vehicle's actual path significantly differs from the planned trajectory, leading to driving task failure and unreliable performance assessment.
         </p>
     </div>
@@ -138,7 +138,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/carla/unexpected_stop_n_resume.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Abnormal Stop-Resume Behaviors:</strong> While not immediately terminating scenarios, these represent abnormal behaviors that compromise the validity of simulation-based ADS evaluation and are easily overlooked.
         </p>
     </div>
@@ -149,7 +149,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/MetaDrive/metadrive.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>MetaDrive Critical Failures:</strong> Main bugs involving vehicle collisions, off-road events, and agent stuck, all of which can interrupt normal vehicle driving and compromise simulation reliability.
         </p>
     </div>
@@ -161,7 +161,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/Carla_Apollo/apollo_stuck.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Apollo Agent Stuck:</strong> Key bug in CARLA-Apollo co-simulation where the agent becomes immobilized, disrupting system operation and undermining the reliability of ADS performance assessment.
         </p>
     </div>
@@ -172,7 +172,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/Carla_Apollo/apollo_deviation.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Apollo Trajectory Deviations:</strong> Critical bug in co-simulation environment where planned and actual trajectories diverge significantly, compromising the validity of autonomous driving system evaluation.
         </p>
     </div>
@@ -183,7 +183,7 @@ We conducted a 90 hours of evaluation using our system separately on CARLA, Meta
             <source src="assets/Carla_Apollo/apollo_stop_n_start.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p style="font-size: 0.9em; margin-top: 10px; text-align: justify;">
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: left; line-height: 1.4; padding: 0 10px;">
         <strong>Repeated Abnormal Stop-Resume:</strong> Key bug involving repeated abnormal stop-and-resume behaviors that disrupt system operation and undermine the reliability of ADS performance assessment.
         </p>
     </div>
